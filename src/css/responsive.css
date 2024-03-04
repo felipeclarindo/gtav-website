@@ -1,0 +1,83 @@
+/* Define estilos para telas com largura máxima de 1024px */
+@media (max-width: 1024px) {
+    /* Centraliza o cabeçalho e altera a direção dos itens para coluna */
+    .cabecalho {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 15px;
+    }
+
+    /* Reduz o padding dos itens do menu */
+    .cabecalho .menu li a {
+        padding: 15px;
+    }
+
+    /* Reduz o padding da seção de informações na home */
+    .home .informacoes {
+        padding: 30px;
+    }
+
+    /* Reduz o tamanho máximo das imagens na home */
+    .home .informacoes img {
+        max-width: 100px;
+    }
+
+    /* Reduz o tamanho da fonte do título na home */
+    .home .informacoes .titulo {
+        font-size: 40px;
+    }
+    
+    /* Reduz a largura do cartão de compra */
+    .compre-ja .cartao {
+        width: 70%;
+    }
+}
+
+/* Define estilos para telas com largura máxima de 768px */
+@media (max-width: 768px){
+    /* Reduz o padding da seção de compra já */
+    .compre-ja {
+        padding: 30px;
+    }
+
+    /* Ajusta o padding e a largura do cartão de compra */
+    .compre-ja .cartao {
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    /* Reduz o tamanho da fonte do título dentro do cartão de compra */
+    .compre-ja .informacoes h3 {
+        font-size: 35px;
+    }
+
+    /* Altera a direção dos ícones de plataformas para coluna */
+    .compre-ja .informacoes .plataformas {
+        flex-direction: column;
+    }
+
+    /* Ajusta o espaçamento do botão de plataforma */
+    .btn-plataforma {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    
+    /* Ajusta a largura do botão de compra */
+    .btn-comprar {
+        width: 100%;
+    }
+}
+
+/* Define estilos para telas com largura máxima de 425px */
+@media (max-width: 425px) {
+    /* Altera o fundo da seção principal da home */
+    main:after{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+    }
+
+    /* Reduz o tamanho máximo da imagem da capa do jogo no cartão de compra */
+    .compre-ja .cartao .capa-do-jogo {
+        max-width: 80%;
+    }
+}

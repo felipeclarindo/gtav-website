@@ -1,0 +1,237 @@
+/* Definições gerais do body */
+body {
+    background-color: #282828; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+}
+
+/* Cabeçalho */
+.cabecalho {
+    height: 80px; /* Altura do cabeçalho */
+    background-color: #0b0b0b; /* Cor de fundo do cabeçalho */
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
+    align-items: center; /* Alinha os itens ao longo do eixo transversal */
+    padding: 0 80px; /* Espaçamento interno */
+    border-bottom: 1px solid #282828; /* Borda inferior */
+}
+
+/* Logo */
+.cabecalho .logo {
+    display: flex; /* Flex container */
+    gap: 15px; /* Espaçamento entre os elementos filhos */
+}
+
+/* Menu de navegação */
+.cabecalho .menu {
+    display: flex; /* Flex container */
+    gap: 30px; /* Espaçamento entre os elementos filhos */
+}
+
+.cabecalho .menu li a {
+    padding: 30px; /* Espaçamento interno */
+    color: #e8e8e8; /* Cor do texto */
+    font-weight: bolder; /* Espessura da fonte */
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: 'chalet'; /* Familia da fonte */
+}
+
+.cabecalho .menu li a:hover{
+    border-bottom: 2px solid #fff; /* Adiciona borda inferior ao passar o mouse */
+}
+
+/* Conteúdo da home */
+.home {
+    display: flex; /* Flex container */
+    position: relative; /* Posição relativa */
+    min-height: calc(100vh - 80px); /* Altura mínima */
+}
+
+.home::after {
+    content: ''; /* Adiciona um conteúdo pseudo-elemento */
+    position: absolute; /* Posição absoluta */
+    height: 100%; /* Altura */
+    width: 100%; /* Largura */
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%); /* Gradiente de fundo */
+}
+
+.home .imagem-fundo {
+    width: 100%; /* Largura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+}
+
+.home .informacoes {
+    position: absolute; /* Posição absoluta */
+    z-index: 1; /* Ordem de empilhamento */
+    min-height: calc(100vh - 80px); /* Altura mínima */
+    display: flex; /* Flex container */
+    flex-direction: column; /* Direção dos itens */
+    justify-content: center; /* Alinha os itens ao centro verticalmente */
+    gap: 32px; /* Espaçamento entre os elementos */
+    padding: 80px 80px 80px 170px; /* Espaçamento interno */
+    max-width: 780px; /* Largura máxima */
+}
+
+.home .informacoes img{
+    max-width: 150px; /* Largura máxima da imagem */
+}
+
+.home .informacoes .lista-de-jogos {
+    display: flex; /* Flex container */
+    gap: 32px; /* Espaçamento entre os elementos */
+}
+
+.home .informacoes .titulo {
+    font-family: "Chaletcomprime"; /* Familia da fonte */
+    font-size: 55px; /* Tamanho da fonte */
+}
+
+.home .informacoes .texto {
+    font-family: "Chalet"; /* Familia da fonte */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+}
+
+/* Botão de comprar e plataforma */
+.btn-comprar, .btn-plataforma {
+    background-color: rgba(255, 255, 255, .1); /* Cor de fundo */
+    border: 0.5px solid #fff; /* Borda */
+    border-radius: 4px; /* Raio da borda */
+    font-family: "Chaletcomprime"; /* Familia da fonte */
+    font-size: 28px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento do texto */
+    padding: 20px 40px; /* Espaçamento interno */
+    text-transform: uppercase; /* Transforma o texto em maiúsculo */
+    width: 50%; /* Largura */
+    transition: all .3s ease-in; /* Transição */
+}
+
+.btn-plataforma {
+    color: #fff; /* Cor do texto */
+    width: 100%; /* Largura */
+    cursor: pointer; /* Cursor do mouse */
+}
+
+.btn-comprar:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #000; /* Cor do texto ao passar o mouse */
+}
+
+/* Seção de compra */
+.compre-ja .capa-do-jogo {
+    width: 270px; /* Largura da imagem */
+}
+
+.compre-ja {
+    display: flex; /* Flex container */
+    flex-direction: column; /* Direção dos itens */
+    text-align: center; /* Alinhamento do texto */
+    padding: 50px; /* Espaçamento interno */
+    align-items: center; /* Alinha os itens ao centro */
+}
+
+.compre-ja .titulo {
+    font-family: "ChaletComprime"; /* Familia da fonte */
+    font-size: 50px; /* Tamanho da fonte */
+    font-weight:700; /* Peso da fonte */
+    margin-bottom: 50px; /* Margem inferior */
+}
+
+.compre-ja .cartao {
+    display: flex; /* Flex container */
+    flex-direction: column; /* Direção dos itens */
+    align-items: center; /* Alinhamento dos itens */
+    background-color: #000; /* Cor de fundo */
+    width: 50%; /* Largura */
+    border-radius: 10px; /* Raio da borda */
+    padding: 80px; /* Espaçamento interno */
+    gap: 40px; /* Espaçamento entre os elementos */
+}
+
+.compre-ja .informacoes {
+    display: flex; /* Flex container */
+    flex-direction: column; /* Direção dos itens */
+    gap: 30px; /* Espaçamento entre os elementos */
+}
+
+.compre-ja .informacoes h3 {
+    font-family: "ChaletComprime"; /* Familia da fonte */
+    font-size: 52px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+}
+
+.compre-ja .informacoes p {
+    color: #e8e8e8; /* Cor do texto */
+    font-family: "Chalet"; /* Familia da fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+}
+
+/* Plataformas de jogo */
+.compre-ja .informacoes .plataformas {
+    display: flex; /* Flex container */
+    flex-wrap: wrap; /* Quebra de linha */
+    gap: 32px; /* Espaçamento entre os elementos */
+    justify-content: center; /* Alinha os itens ao centro */
+}
+
+/* Plataformas no botão de seleção */
+.compre-ja .btn-plataforma .plataformas {
+    margin-top: 10px; /* Margem superior */
+    display: flex; /* Flex container */
+    flex-direction: column; /* Direção dos itens */
+    gap: 20px; /* Espaçamento entre os elementos */
+    transition: all .3s ease-in; /* Transição */
+    display: none; /* Oculta por padrão */
+    opacity: 0; /* Opacidade */
+}
+
+.compre-ja .btn-plataforma .plataformas.ativo{
+    display: flex; /* Exibe as plataformas */
+    opacity: 1; /* Opacidade */
+}
+
+/* Estilos das plataformas no botão */
+.compre-ja .btn-plataforma .plataformas li {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos das plataformas no botão ao passar o mouse */
+.compre-ja .btn-plataforma .plataformas li:nth-child(1){
+    border: 1px solid #00439C; /* Borda */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(1):hover{
+    background-color: #00439C; /* Cor de fundo ao passar o mouse */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(2){
+    border: 1px solid #387a26; /* Borda */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(2):hover{
+    background-color: #387a26; /* Cor de fundo ao passar o mouse */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3){
+    border: 1px solid #00439C; /* Borda */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(3):hover{
+    background-color: #00439C; /* Cor de fundo ao passar o mouse */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4){
+    border: 1px solid #387a26; /* Borda */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(4):hover{
+    background-color: #387a26; /* Cor de fundo ao passar o mouse */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5){
+    border: 1px solid #fcaf17; /* Borda */
+}
+
+.compre-ja .btn-plataforma .plataformas li:nth-child(5):hover{
+    background-color: #fcaf17; /* Cor de fundo ao passar o mouse */
+}

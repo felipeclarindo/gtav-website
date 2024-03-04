@@ -1,0 +1,17 @@
+/* Reset de estilos para todos os elementos */
+* {
+    margin: 0; /* Zera as margens */
+    padding: 0; /* Zera o preenchimento */
+    box-sizing: border-box; /* Inclui as bordas no cálculo do tamanho total */
+}
+
+/* Remove os estilos padrão da lista */
+ul {
+list-style: none; /* Remove os marcadores de lista */
+}
+
+/* Remove o sublinhado e mantém a cor padrão dos links */
+a {
+text-decoration: none; /* Remove o sublinhado */
+color: inherit; /* Mantém a cor padrão */
+}

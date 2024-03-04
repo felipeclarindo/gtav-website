@@ -1,0 +1,5 @@
+/* Adiciona uma nova fonte */
+@font-face {
+    font-family: 'Chaletcomprime'; /* Declara o nome da font */
+    src: url("../fonts/ChaletComprime.ttf"); /* Informa o caminho da fonte */
+}
