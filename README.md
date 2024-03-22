@@ -24,4 +24,13 @@ Este projeto foi baseado em um tutorial do canal [Dev em Dobro]. Embora tenha si
 
 ## Autor
 
-[Felipe Clarindo]
+ **Felipe Clarindo**
+  - [LinkedIn](https://www.linkedin.com/in/felipeclarindo-934578289/)
+  - [Instagram](https://www.instagram.com/lipetegoat)
+  - [GitHub](https://github.com/felipeclarindo)
+
+
+## Licença
+
+Este projeto está licenciado sob a [GNU Affero License](https://www.gnu.org/licenses/agpl-3.0.html).
+
