@@ -18,10 +18,6 @@ Basta abrir o arquivo `index.html` em um navegador web para visualizar o site.
 - CSS
 - JavaScript
 
-## Créditos
-
-Este projeto foi baseado em um tutorial do canal [Dev em Dobro]. Embora tenha sido desenvolvido de forma exclusiva, agradeço ao canal pela inspiração.
-
 ## Autor
 
  **Felipe Clarindo**
@@ -29,6 +25,9 @@ Este projeto foi baseado em um tutorial do canal [Dev em Dobro]. Embora tenha si
   - [Instagram](https://www.instagram.com/lipetegoat)
   - [GitHub](https://github.com/felipeclarindo)
 
+## Créditos
+
+Este projeto foi baseado em um tutorial do canal [Dev em Dobro]. Embora tenha sido desenvolvido de forma exclusiva, agradeço ao canal pela inspiração.
 
 ## Licença
 
